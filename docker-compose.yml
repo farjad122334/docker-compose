@@ -1,6 +1,6 @@
 services:
   backend:
-    build: ./server
+    build: ./backend
     container_name: back-api
     ports:
       - "5000:5000"
@@ -9,7 +9,7 @@ services:
     depends_on: 
       - mongo
   frontend:
-    build: ./ 
+    build: ./frontend
     container_name: front-api
     ports: 
       - "3000:3000"
